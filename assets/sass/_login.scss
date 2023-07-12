@@ -1,0 +1,75 @@
+#loginContainer {
+    width: 800px;
+    height: 300px;
+    margin: 200px auto;
+    text-align: center;
+    border: 1px solid $color_2;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+    background-color: #006E90;
+    border-radius: 50px 0px;
+
+    .logincare {
+        margin: 100px auto;
+
+        div {
+            margin: 20px;
+
+            input {
+                margin: 5px;
+                background-color: #006E90;
+
+                border: none;
+                border-bottom: 2px solid $color_2;
+            }
+        }
+    }
+}
+
+
+/*controleur*/
+ul {
+    list-style: none;
+}
+
+.errorMessage {
+    color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width:1100px) {
+    #loginContainer {
+        width: auto;
+        height: auto;
+        margin: 200px auto;
+        text-align: center;
+        border: 1px solid $color_2;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+        background-color: #006E90;
+        border-radius: 50px 0px;
+    
+        .logincare {
+            margin: 100px auto;
+    
+            div {
+                margin: 20px;
+    
+                input {
+                    margin: 5px;
+                    background-color: #006E90;
+    
+                    border: none;
+                    border-bottom: 2px solid $color_2;
+                }
+            }
+        }
+    }
+    
+    
+    /*controleur*/
+    ul {
+        list-style: none;
+    }
+    
+    .errorMessage {
+        color: rgb(255, 0, 0);
+    }
+}

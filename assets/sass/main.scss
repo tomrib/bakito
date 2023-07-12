@@ -1,0 +1,207 @@
+@import './heater';
+@import './book';
+@import './bookOne';
+@import './footer';
+@import './formulair';
+@import './login';
+@import './profile';
+@import './addBook';
+@import './404';
+
+
+.title {
+    text-align: center;
+    margin: 100px auto 50px auto;
+    border-radius: 20px;
+    width: 50%;
+    background-color: rgba(210, 105, 30, 0.486);
+
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    width: fit-content;
+    border-radius: 25px;
+    margin: 1%;
+    background-color: $color_2;
+    text-align: center;
+
+    &:hover {
+        border: 1px solid #ffffff;
+        background-color: $color_4;
+    }
+}
+
+.newBook {
+
+    margin: 20% 27% 20% 27%;
+}
+
+.owl-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.owl-carousel {
+    margin: 0 auto;
+    height: 300px;
+    width: 85%;
+    border-radius: 10px;
+    background-color: $color_4;
+    padding: 20px 20px 70px 20px;
+    border: 2px solid $color_2;
+
+    .item {
+        margin: 0 auto;
+        border-radius: 0 0 0 50px;
+        background-color: $color_2;
+        height: 300px;
+        width: 200px;
+
+        .titreBook {
+            padding-top: 10px;
+            text-align: center;
+        }
+    }
+
+    img {
+        width: 100px;
+        height: 150px;
+
+    }
+}
+
+.imgEdithor {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    background-color: $color_4;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px;
+
+    .item {
+        img {
+            border-radius: 20px;
+        }
+    }
+
+}
+
+.short {
+    margin: 0px auto;
+    text-align: center;
+
+    .textShort {
+        width: 800px;
+        text-align: center;
+        background-color: $color_4;
+        padding: 50px;
+        margin: 0 auto 50px auto;
+        border-radius: 50px 0px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .title {
+        text-align: center;
+        margin: 100px auto 50px auto;
+        border-radius: 20px;
+        width: 100%;
+        background-color: rgba(210, 105, 30, 0.486);
+    
+    }
+    
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel button.owl-dot {
+        width: fit-content;
+        border-radius: 25px;
+        margin-top:50px;
+        background-color: $color_2;
+        text-align: center;
+    
+        &:hover {
+            border: 1px solid #ffffff;
+            background-color: $color_4;
+        }
+    }
+    
+    .newBook {
+    
+        margin: 20% 27% 20% 27%;
+    }
+    
+    .owl-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .owl-carousel {
+        margin: 0 auto;
+        height:auto;
+        width: auto;
+        border-radius: 10px;
+        background-color: $color_4;
+        padding: 20px 20px 70px 20px;
+        border: 2px solid $color_2;
+    
+        .item {
+            margin: 0 auto;
+            border-radius: 0 0 0 50px;
+            background-color: $color_2;
+            height: 300px;
+            width: 200px;
+    
+            .titreBook {
+                padding-top: 15px;
+                text-align: center;
+            }
+        }
+    
+        img {
+            width: 100px;
+            height: 150px;
+    
+        }
+    }
+    
+    .imgEdithor {
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column ;
+        background-color: $color_4;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: space-around;
+        padding: 20px;
+    
+        .item {
+            img {
+                border-radius: 20px;
+            }
+        }
+    
+    }
+    
+    .short {
+        margin: 0px auto;
+        text-align: center;
+    
+        .textShort {
+            width: auto;
+            text-align: center;
+            background-color: $color_4;
+            padding: 50px;
+            margin: 0 auto 50px auto;
+            border-radius: 50px 0px;
+        }
+    }
+}

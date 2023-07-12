@@ -1,0 +1,31 @@
+RewriteEngine On
+
+ErrorDocument 404 /views/errors/page404.php
+
+RewriteRule ^inscription$ ./controllers/user/registerController.php
+
+RewriteRule ^connexion$ ./controllers/user/loginController.php
+
+RewriteRule ^manga$ ./controllers/book/bookController.php
+
+RewriteRule ^nouveautes$ ./controllers/book/newBookController.php
+
+RewriteRule ^accueil$ ./index.php
+
+RewriteRule ^Deconnexion$ ./controllers/user/logoutController.php
+
+RewriteRule ^info-([0-9]+)$ ./controllers/book/bookOneController.php?id=$1
+
+RewriteRule ^ajout$ ./admin/controllers/book/addBookcontroller.php
+
+RewriteRule ^Recherche$ ./controllers/book/checkBookController.php
+
+RewriteRule ^type-([0-9]+)$ ./controllers/book/typeBookController.php?id=$1
+
+RewriteRule ^Profil$ ./controllers/user/profilController.php
+
+RewriteRule ^Modifie-([0-9]+)$ ./admin/controllers/book/updeteBookController.php?id=$1
+
+RewriteRule ^suppression-([0-9]+)$ ./controllers/book/deleteController.php?id=$1
+
+RewriteRule ^connexion$ ./controllers/user/loginController.php

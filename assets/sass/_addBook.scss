@@ -1,0 +1,240 @@
+@mixin addBookDeco {
+    width: 99%;
+    min-width: 30%;
+    margin: 20px 3px;
+    border: none;
+    background-color: #006e9000 ;
+
+}
+
+.decoform {
+    margin-top: 100px;
+    width: 100%;
+margin-bottom: 10px;
+    .titleBookAdd {
+        height: 50px;
+        text-align: center;
+        padding: 5px 0px;
+        background-color: $color_2;
+        width: 800px;
+        border-radius:  0px 50px;
+        margin: 50px auto;
+    }
+
+
+
+    #addBook {
+        width: 800px;
+        padding: 10px;
+        margin: 0px auto;
+        background-color: $color_4;
+        border-radius: 50px;
+
+        label {
+            @include addBookDeco;
+            font-size: larger;
+            width: 100%;
+            text-align: center;
+            display: block;
+
+        }
+
+        input {
+            @include addBookDeco;
+            border-bottom: 2px solid $color_2;
+        }
+
+        .btnBoxText {
+            width: 300px;
+            margin: 0% auto;
+
+            input[type=submit] {
+                background-color: $color_2;
+                border-radius: 10px;
+                width: 300px;
+                height: 25px;
+
+                &:hover {
+                    background-color: $color_4;
+                }
+            }
+
+        }
+
+        p {
+            text-align: center;
+            color: red;
+            font-size: larger
+        }
+
+        select {
+            @include addBookDeco;
+            border-bottom: 2px solid $color_2;
+        }
+
+        textarea {
+            @include addBookDeco;
+            border: 2px solid $color_2;
+            border-radius: 15px 0px;
+        }
+
+        .boxArticle {
+            width: 200px;
+            margin: 0 auto;
+
+            .imgView {
+                width: 200px;
+
+            }
+        }
+
+        .offAuthor {
+            display: none;
+        }
+
+        .onAuthor {
+            display: inline;
+        }
+
+        .offType {
+            display: none;
+        }
+
+        .onType {
+            display: inline;
+        }
+
+        .CategorieOff {
+            display: none;
+        }
+
+        .categorieOn {
+            display: inline;
+        }
+
+        .editorOff {
+            display: none;
+        }
+
+        .editorOn {
+            display: inline;
+        }
+    }
+}
+@media screen and (max-width:1100px) {
+ 
+    
+    .decoform {
+       margin: 100px auto;
+        width: auto;
+        .titleBookAdd {
+            height: 50px;
+            text-align: center;
+            padding: 5px 0px;
+            background-color: $color_2;
+            width: auto;
+            border-radius:  0px 50px;
+            margin: 50px auto;
+        }
+    
+    
+    
+        #addBook {
+            width: auto;
+            padding: 10px;
+            margin: 0px auto;
+            background-color: $color_4;
+            border-radius: 50px;
+    
+            label {
+              
+                font-size: larger;
+                width: auto;
+                text-align: center;
+                display: block;
+    
+            }
+    
+            input {
+       
+                border-bottom: 2px solid $color_2;
+            }
+    
+            .btnBoxText {
+                width: auto;
+                margin: 0% auto;
+    
+                input[type=submit] {
+                    background-color: $color_2;
+                    border-radius: 10px;
+                    width: 300px;
+                    height: 25px;
+    
+                    &:hover {
+                        background-color: $color_4;
+                    }
+                }
+    
+            }
+    
+            p {
+                text-align: center;
+                color: red;
+                font-size: larger
+            }
+    
+            select {
+                @include addBookDeco;
+                border-bottom: 2px solid $color_2;
+            }
+    
+            textarea {
+                @include addBookDeco;
+                border: 2px solid $color_2;
+                border-radius: 15px 0px;
+            }
+    
+            .boxArticle {
+                width: 200px;
+                margin: 0 auto;
+    
+                .imgView {
+                    width: 200px;
+    
+                }
+            }
+    
+            .offAuthor {
+                display: none;
+            }
+    
+            .onAuthor {
+                display: inline;
+            }
+    
+            .offType {
+                display: none;
+            }
+    
+            .onType {
+                display: inline;
+            }
+    
+            .CategorieOff {
+                display: none;
+            }
+    
+            .categorieOn {
+                display: inline;
+            }
+    
+            .editorOff {
+                display: none;
+            }
+    
+            .editorOn {
+                display: inline;
+            }
+        }
+    }
+}

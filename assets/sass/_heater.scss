@@ -1,0 +1,177 @@
+$color_1: #000000;
+$color_2: #F18F01;
+$color_3: #f0f8ff;
+$color_4: #006e90cd;
+$color_5: #fd980053;
+$color_6: #ff0000;
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../img/manga1.svg);
+	color: $color_3;
+}
+
+.menuBurger {
+	display: none;
+}
+
+nav {
+
+	top: 0;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	background-color: $color_1;
+	z-index: 10;
+	align-items: center;
+
+	#resear {
+		display: flex;
+	}
+
+	#valid {
+
+		align-items: center;
+		justify-content: center;
+	}
+
+	.delivered {
+		display: flex;
+		align-items: center;
+
+		button {
+			margin-left: 10px;
+		}
+	}
+
+	.valid {
+		height: 30px;
+		border-radius: 50px;
+		width: 25px;
+	}
+
+	input {
+		width: 350px;
+		height: 30px;
+		top: 10px;
+		border-radius: 10px;
+		background-color: $color_4;
+		border: none;
+
+		&::placeholder {
+			color: #fff;
+			font-size: medium;
+			text-align: center;
+		}
+	}
+
+
+	.titleAcceuil {
+
+		a {
+			color: $color_2;
+			text-decoration: none;
+		}
+	}
+}
+
+.acceuil {
+	text-decoration: none;
+}
+
+button {
+	height: 30px;
+	border: none;
+	background-color: $color_4;
+	border-radius: 5px;
+	color: $color_3;
+	min-width: 100PX;
+	margin: 0 5px;
+
+	&:hover {
+		background-color: $color_2;
+	}
+}
+
+
+@media screen and (max-width:1100px) {
+	.menuBurger {
+		top: 0;
+		padding-top: 10px;
+		height: 40px;
+		width: 100%;
+		background-color: #000000;
+		display: flex;
+		position: fixed;
+		justify-content: right;
+		z-index: 15;
+
+		.button {
+			margin-top: 5px;
+		}
+	}
+
+	.offNavr {
+		top: -100%;
+	}
+
+	.onNav {
+		width: 100%;
+		height: auto;
+		margin: 50px auto;
+		top: 0;
+		display: inline-block;
+		display: flex;
+		flex-direction: column;
+
+		.delivered {
+			display: flex;
+			flex-direction: column;
+
+			button {
+				margin: 5px;
+			}
+		}
+
+		.connect {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 50px;
+
+			button {
+				margin: 5px;
+			}
+
+		}
+
+		#resear {
+			display: flex;
+			margin: 50px auto;
+		}
+
+		input {
+			width: 200px;
+			height: 30px;
+			top: 10px;
+			border-radius: 10px;
+			background-color: $color_4;
+			border: none;
+
+			&::placeholder {
+				color: #fff;
+				font-size: medium;
+				text-align: center;
+			}
+		}
+
+		.titleAcceuil {
+
+			a {
+				color: $color_2;
+				text-decoration: none;
+			}
+		}
+	}
+}

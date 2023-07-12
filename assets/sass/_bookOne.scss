@@ -1,0 +1,187 @@
+.containerItem {
+
+	width: 80%;
+	margin: 100px auto 20px auto;
+
+	.titleBookOne {
+		border: 1px solid $color_2;
+		text-align: center;
+		background-color: $color_2;
+		border-radius: 50px 50px 0 0;
+	}
+
+	.container {
+		display: flex;
+		margin: 20px 0px;
+		background-color: $color_4;
+
+		.imgBook {
+			padding: 25px;
+		}
+
+		.itemPosition {
+			width: 100%;
+			margin: 20px 20px;
+			padding: 10px 0px;
+
+			.decoBookOne {
+				width: 100%;
+				text-align: center;
+				height: 150px;
+				display: flex;
+			}
+
+			.item {
+				width: 100%;
+				text-align: center;
+			}
+
+			.textOne {
+				text-align: center;
+
+			}
+		}
+
+		.textOne {
+			display: contents;
+		}
+	}
+}
+
+.itemBtn {
+	width: 100%;
+	height: 90px;
+	display: inline-block;
+	text-align: center;
+	background-color: $color_2;
+	border-radius: 0 0 50px 50px;
+	margin-bottom: 50px;
+
+	button {
+		margin-top: 25px;
+	}
+
+	#delete {
+		background-color: $color_6;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.containerItem {
+		margin: 150px auto 10px auto;
+		width: auto;
+		height: auto;
+
+		.titleBookOne {
+			border: 1px solid $color_2;
+			text-align: center;
+			background-color: $color_2;
+			border-radius: 50px 50px 0 0;
+		}
+
+		.container {
+			margin: 20px auto;
+			background-color: $color_4;
+			display: block;
+
+			.imgBook {
+				text-align: center;
+				width: auto;
+				padding: 5px 0 0 0;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.itemPosition {
+				margin: 20px 0px;
+				width: 95%;
+				margin: 0 auto;
+
+				.decoBookOne {
+					margin: 2%;
+					width: auto;
+					text-align: center;
+					display: flex;
+				}
+
+				.item {
+					width: 100%;
+					margin: 2%;
+					text-align: center;
+				}
+
+				.textOne {
+					text-align: center;
+					width: 90%;
+					border: 1px solid black;
+
+					.boxDescription {
+						margin: 50px auto;
+						width: 90%;
+					}
+				}
+			}
+
+			.textOne {
+				display: contents;
+			}
+		}
+	}
+}
+
+.itemBtn {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	text-align: center;
+	background-color: $color_2;
+	border-radius: 0 0 50px 50px;
+	padding-bottom: 25px;
+
+	button {
+
+
+		margin-top: 25px;
+	}
+
+	#btnDelete {
+		background-color: red;
+	}
+
+}
+
+.offContainerDelete {
+	display: none;
+}
+
+.onContainerDelete {
+	width: 100%;
+	height: 249vh;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.449);
+
+	.cardDelete {
+		width: auto;
+		height: 300px;
+		margin: 1100px auto 0 auto;
+		background-color: $color_2;
+		border-radius: 50px;
+		text-align: center;
+
+		h2 {
+			padding: 50px;
+			color: red;
+
+		}
+
+		#delete {
+			background-color: $color_6;
+			cursor: pointer;
+
+		}
+	}
+}
